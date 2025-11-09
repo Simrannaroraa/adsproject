@@ -28,4 +28,43 @@ This project is a full-stack data science application that analyzes the Netflix 
 * Node.js v16+
 * A Google Firebase project (for authentication)
 
+# 1. Open a new terminal and navigate to the frontend folder
+cd web-app/frontend
+
+# 2. Install Node.js dependencies
+npm install
+
+# 3. Create a .env file in the /frontend/ directory
+#    You must get these values from your own Supabase project.
+touch .env
+
+# 4. Add your Supabase config keys to the .env file
+VITE_SUPABASE_URL="your-supabase-project-url"
+VITE_SUPABASE_PUBLISHABLE_KEY="your-supabase-anon-key"
+VITE_SUPABASE_PROJECT_ID="your-supabase-project-id"
+
+
+# 5. Run the React development server
+npm run dev
+
+# Your app will now be running on http://localhost:5173
+
+### 1. Backend (Flask API) Setup
+
+The backend serves the trained machine learning model.
+
+```bash
+# 1. Navigate to the backend folder
+cd web-app/backend
+
+
+# 3. Install required Python packages
+pip install flask scikit-learn pandas
+
+# 4. Run the Flask server
+python api.py
+
+# Your API will now be running on [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+
 
