@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAZMyFJN7b8fNswdlenPoonHtUG_LPMMhQ",
+  apiKey: "YOUR_API_KEY",
   authDomain: "netflix-ef1fa.firebaseapp.com",
   projectId: "netflix-ef1fa",
   storageBucket: "netflix-ef1fa.firebasestorage.app",
